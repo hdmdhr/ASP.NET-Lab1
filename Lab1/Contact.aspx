@@ -2,16 +2,21 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
-    <h3>Your contact page.</h3>
+    <h3>Contact Page.</h3>
     <address>
-        One Microsoft Way<br />
-        Redmond, WA 98052-6399<br />
-        <abbr title="Phone">P:</abbr>
-        425.555.0100
+        Inland Lake Marina<br />
+        Box 123<br />
+        Inland Lake, Arizona<br/>
+        86038<br/>
+        <abbr title="Office Phone">OP:</abbr>
+        928-450-2234<br/>
+        <abbr title="Leasing Phone">LP:</abbr>
+        928-450-2235<br/>
+        <abbr title="Fax">F:</abbr>
+        928-450-2236<br/>
     </address>
 
     <address>
-        <strong>Support:</strong>   <a href="mailto:Support@example.com">Support@example.com</a><br />
-        <strong>Marketing:</strong> <a href="mailto:Marketing@example.com">Marketing@example.com</a>
+        <strong>Contact email:</strong>   <a href="mailto:info@inlandmarina.com">info@inlandmarina.com</a><br />
     </address>
 </asp:Content>

@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lab1", "Lab1\Lab1.csproj", "{2C3B794D-0D07-4EEB-B54E-EAE553B8A0FF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPRG214.Marina.Domain", "CPRG214.Marina.Domain\CPRG214.Marina.Domain.csproj", "{C702692A-130E-48A6-A202-0BD569278AD5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CPRG214.Framework.Data", "CPRG214.Framework.Data\CPRG214.Framework.Data.csproj", "{45633B42-2ECC-4797-B464-F96751EA5C26}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{2C3B794D-0D07-4EEB-B54E-EAE553B8A0FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C3B794D-0D07-4EEB-B54E-EAE553B8A0FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C3B794D-0D07-4EEB-B54E-EAE553B8A0FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C702692A-130E-48A6-A202-0BD569278AD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C702692A-130E-48A6-A202-0BD569278AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C702692A-130E-48A6-A202-0BD569278AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C702692A-130E-48A6-A202-0BD569278AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{45633B42-2ECC-4797-B464-F96751EA5C26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45633B42-2ECC-4797-B464-F96751EA5C26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45633B42-2ECC-4797-B464-F96751EA5C26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45633B42-2ECC-4797-B464-F96751EA5C26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
