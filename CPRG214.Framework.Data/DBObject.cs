@@ -44,7 +44,7 @@ namespace CPRG214.Framework.Data
 
         public IDataParameter CreateParameter()
         {
-            return Factory.CreateParameter();  // DbParameter implemented (is a) IDataParameter
+            return Factory.CreateParameter(); // DbParameter implemented (is a) IDataParameter
         }
 
         /// <summary>
@@ -53,7 +53,7 @@ namespace CPRG214.Framework.Data
         /// <param name="sql"></param>
         /// <param name="cmdType"></param>
         /// <param name="parameters"></param>
-        public void NonQuery(string sql, CommandType cmdType, IDataParameter[] parameters)
+        public int NonQuery(string sql, CommandType cmdType, IDataParameter[] parameters)
         {
             if (Factory == null)
                 throw new Exception("Provider name has not been set.");
@@ -70,7 +70,8 @@ namespace CPRG214.Framework.Data
                         cmd.Parameters.AddRange(parameters);
 
                     conn.Open();
-                    cmd.ExecuteNonQuery();
+                    var rowsAffected = cmd.ExecuteNonQuery();
+                    return rowsAffected;
                 }
             }
             catch (Exception ex)

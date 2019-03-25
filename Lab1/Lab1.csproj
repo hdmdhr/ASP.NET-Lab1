@@ -122,6 +122,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="images\icon_marina.svg" />
     <Content Include="images\inlandmarina_banner.jpg" />
+    <Content Include="Lease.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\Site.css" />
@@ -199,6 +200,13 @@
     </Compile>
     <Compile Include="Available.aspx.designer.cs">
       <DependentUpon>Available.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lease.aspx.cs">
+      <DependentUpon>Lease.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lease.aspx.designer.cs">
+      <DependentUpon>Lease.aspx</DependentUpon>
     </Compile>
     <Compile Include="Register.aspx.cs">
       <DependentUpon>Register.aspx</DependentUpon>

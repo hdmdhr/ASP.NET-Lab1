@@ -11,6 +11,10 @@ namespace CPRG214.Marina.Domain
 {
     public class SlipManager
     {
+        /// <summary>
+        /// Get all available slips.
+        /// </summary>
+        /// <returns>A list of Slip object.</returns>
         public static List<Slip> GetAvailableSlips()
         {
             var slips = new List<Slip>();

@@ -39,7 +39,7 @@
         </asp:ScriptManager>
 
         <div class="navbar navbar-dark fixed-top">
-            <a class="navbar-brand" runat="server" href="#">
+            <a class="navbar-brand" runat="server" href="~">
                 <img src="images/icon_marina.svg" width="30" height="30" class="d-inline-block align-top" alt="logo">
                 Marina Online
             </a>
