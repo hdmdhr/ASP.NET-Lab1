@@ -122,6 +122,7 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="images\icon_marina.svg" />
     <Content Include="images\inlandmarina_banner.jpg" />
+    <Content Include="images\marinaweb.png" />
     <Content Include="Lease.aspx" />
     <Content Include="Register.aspx" />
     <Content Include="Contact.aspx" />

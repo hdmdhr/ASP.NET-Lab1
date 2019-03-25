@@ -2,7 +2,6 @@
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2><%: Title %>.</h2>
-    <h3>Contact Page.</h3>
     <address>
         Inland Lake Marina<br />
         Box 123<br />

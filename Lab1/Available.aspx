@@ -9,6 +9,10 @@
             <asp:BoundField DataField="DockID" HeaderText="DockID" SortExpression="DockID" />
         </Columns>
     </asp:GridView>
-    <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetAvailableSlipsFromDock" TypeName="CPRG214.Marina.Domain.SlipManager"></asp:ObjectDataSource>
+    <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetAvailableSlipsFromDock" TypeName="CPRG214.Marina.Domain.SlipManager">
+        <SelectParameters>
+            <asp:Parameter Name="dockID" Type="Int32" />
+        </SelectParameters>
+    </asp:ObjectDataSource>
 
 </asp:Content>

@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Lease.aspx.cs" Inherits="Lab1.Lease" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <div class="container w-75">
+    <div class="container p-2">
         <div class="row">
             <h3 class="col-sm-6">To lease slip, please pick a dock.</h3>
             <asp:DropDownList ID="drpDockPicker" runat="server" CssClass="col-sm-6" OnSelectedIndexChanged="drpDockPicker_SelectedIndexChanged" AutoPostBack="True">
@@ -30,11 +30,8 @@
         <SortedDescendingCellStyle BackColor="#FFFDF8" />
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
-    <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" SelectMethod="GetAvailableSlips" TypeName="CPRG214.Marina.Domain.SlipManager">
-    </asp:ObjectDataSource>
 
-    <asp:Label ID="lblLeaseHistory" runat="server" CssClass="h3 mb-4"></asp:Label>
-    <asp:GridView ID="grdLeaseHistory" runat="server" CssClass="table table-dark table-striped w-50"/>
-    <h2>Show leasing table.</h2>
+    <asp:Label ID="lblLeaseHistory" runat="server" CssClass="h3 my-4"></asp:Label>
+    <asp:GridView ID="grdLeaseHistory" runat="server" CssClass="table table-dark table-striped w-50 my-4"/>
 
 </asp:Content>

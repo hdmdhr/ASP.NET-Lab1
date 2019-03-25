@@ -1,5 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Lab1.SiteMaster" %>
 
+<!-- Updated Bootstrap to 4.3.1, may have some compatible issue. -->
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -16,7 +18,7 @@
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 </head>
-<body>
+<body class="pt-0">
     <form runat="server">
         <asp:ScriptManager runat="server">
             <Scripts>
@@ -37,29 +39,37 @@
                 <%--Site Scripts--%>
             </Scripts>
         </asp:ScriptManager>
-
-        <div class="navbar navbar-dark fixed-top">
+        <header class="text-center" style="background-color: #e3f2fd;">
+        <img src="images/inlandmarina_banner.jpg" />
+        
+        
+        <nav class="navbar navbar-expand-lg navbar-light" >
             <a class="navbar-brand" runat="server" href="~">
                 <img src="images/icon_marina.svg" width="30" height="30" class="d-inline-block align-top" alt="logo">
                 Marina Online
             </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-            <div class="container">
-                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"></span>
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <li><a runat="server" href="~/">Home</a></li>
-                        <li><a runat="server" href="~/Available.aspx">Available Slips</a></li>
-                        <li><a runat="server" href="~/Contact">Contact</a></li>
-                        <li><a runat="server" href="~/Register.aspx">Register</a></li>
-                    </ul>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" runat="server" href="~">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" runat="server" href="~/Available.aspx">Available Slips</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" runat="server" href="~/Contact.aspx">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" runat="server" href="~/Register.aspx">Register</a>
+                    </li>
+                </ul>
             </div>
-        </div>
+        </nav>
+        </header>   
 
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
