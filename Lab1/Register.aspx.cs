@@ -13,5 +13,12 @@ namespace Lab1
         {
 
         }
+
+        protected void btnRegister_Click(object sender, EventArgs e)
+        {
+            // check if user exist already,
+            // if no, register user, create session
+            // if yes, create session
+        }
     }
 }
